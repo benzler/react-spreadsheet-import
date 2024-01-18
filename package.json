@@ -1,5 +1,5 @@
 {
-  "name": "react-spreadsheet-import",
+  "name": "@benzler/react-spreadsheet-import",
   "version": "4.6.1",
   "description": "React spreadsheet import for xlsx and csv files with column matching and validation",
   "main": "./dist-commonjs/index.js",
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UgnisSoftware/react-spreadsheet-import.git"
+    "url": "git+https://github.com/benzler/react-spreadsheet-import.git"
   },
   "keywords": [
     "React",
@@ -42,10 +42,10 @@
     "match"
   ],
   "author": {
-    "name": "Ugnis"
+    "name": "benzler"
   },
   "license": "MIT",
-  "homepage": "https://github.com/UgnisSoftware/react-spreadsheet-import#readme",
+  "homepage": "https://github.com/benzler/react-spreadsheet-import#readme",
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
