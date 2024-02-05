@@ -2,7 +2,7 @@ import { Button, ModalFooter, useStyleConfig } from "@chakra-ui/react"
 import { themeOverrides } from "../theme"
 
 type ContinueButtonProps = {
-  onContinue: (val: any) => Promise<void>
+  onContinue: (val: any) => void
   onBack?: () => void
   title: string
   backTitle?: string
