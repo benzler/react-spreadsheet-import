@@ -45,6 +45,8 @@ export const translations = {
     noRowsMessage: "No data found",
     noRowsMessageWhenFiltered: "No data containing errors",
     discardButtonTitle: "Discard selected rows",
+    selectAllButtonTitle: "Select all rows",
+    deselectAllButtonTitle: "Deselect all rows",
     filterSwitchTitle: "Show only rows with errors",
   },
   alerts: {

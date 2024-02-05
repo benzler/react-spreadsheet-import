@@ -79,6 +79,19 @@ export const ValidationStep = <T extends string>({ initialData, file, onBack }: 
     return data
   }, [data, filterByErrors])
 
+  const handleSelectAll = () => {
+    const allIndexes = new Set(tableData.map((value) => value.__index))
+    if (selectedRows.size === allIndexes.size) {
+      setSelectedRows(new Set())
+    } else {
+      setSelectedRows(allIndexes)
+    }
+  }
+
+  const handleDeselectAll = () => {
+    setSelectedRows(new Set())
+  }
+
   const rowKeyGetter = useCallback((row: Data<T> & Meta) => row.__index, [])
 
   const submitData = async () => {
@@ -144,6 +157,16 @@ export const ValidationStep = <T extends string>({ initialData, file, onBack }: 
         <Box display="flex" justifyContent="space-between" alignItems="center" mb="2rem" flexWrap="wrap" gap="8px">
           <Heading sx={styles.heading}>{translations.validationStep.title}</Heading>
           <Box display="flex" gap="16px" alignItems="center" flexWrap="wrap">
+            {tableData.length > selectedRows.size && (
+              <Button variant="outline" size="sm" onClick={handleSelectAll}>
+                {translations.validationStep.selectAllButtonTitle}
+              </Button>
+            )}
+            {tableData.length <= selectedRows.size && (
+              <Button variant="outline" size="sm" onClick={handleDeselectAll}>
+                {translations.validationStep.deselectAllButtonTitle}
+              </Button>
+            )}
             <Button variant="outline" size="sm" onClick={deleteSelectedRows}>
               {translations.validationStep.discardButtonTitle}
             </Button>
