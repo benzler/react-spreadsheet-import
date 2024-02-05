@@ -16,7 +16,7 @@ import { findUnmatchedRequiredFields } from "./utils/findUnmatchedRequiredFields
 export type MatchColumnsProps<T extends string> = {
   data: RawData[]
   headerValues: RawData
-  onContinue: (data: any[], rawData: RawData[], columns: Columns<T>) => void
+  onContinue: (data: any[], rawData: RawData[], columns: Columns<T>) => Promise<void>
   onBack?: () => void
 }
 

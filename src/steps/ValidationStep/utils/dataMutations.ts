@@ -30,8 +30,8 @@ export const addErrorsAndRunHooks = async <T extends string>(
       }
     } else {
       data = await Promise.all(
-        data.map(async (value, index) =>
-          rowHook(value, (...props) => addError(ErrorSources.Row, index, ...props), data),
+        data.map(
+          async (value, index) => await rowHook(value, (...props) => addError(ErrorSources.Row, index, ...props), data),
         ),
       )
     }

@@ -8,7 +8,7 @@ import { readFileAsync } from "../utils/readFilesAsync"
 import type { themeOverrides } from "../../../theme"
 
 type DropZoneProps = {
-  onContinue: (data: XLSX.WorkBook, file: File) => void
+  onContinue: (data: XLSX.WorkBook, file: File) => Promise<void>
   isLoading: boolean
 }
 

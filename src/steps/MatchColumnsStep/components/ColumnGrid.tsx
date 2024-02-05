@@ -10,7 +10,7 @@ type ColumnGridProps<T extends string> = {
   columns: Columns<T>
   userColumn: (column: Column<T>) => React.ReactNode
   templateColumn: (column: Column<T>) => React.ReactNode
-  onContinue: (val: Record<string, string>[]) => void
+  onContinue: (val: Record<string, string>[]) => Promise<void>
   onBack?: () => void
   isLoading: boolean
 }
