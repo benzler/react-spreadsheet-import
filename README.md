@@ -2,11 +2,18 @@
 
 <div align="center">
   
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/UgnisSoftware/react-spreadsheet-import/test.yaml)
-![GitHub](https://img.shields.io/github/license/UgnisSoftware/react-spreadsheet-import) [![npm](https://img.shields.io/npm/v/react-spreadsheet-import)](https://www.npmjs.com/package/react-spreadsheet-import)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/benzler/react-spreadsheet-import/test.yaml)
+![GitHub](https://img.shields.io/github/license/benzler/react-spreadsheet-import) [![npm](https://img.shields.io/npm/v/@benzler/react-spreadsheet-import)](https://www.npmjs.com/package/@benzler/react-spreadsheet-import)
   
 </div>
 <br />
+
+> This is a fork from the original [react-spreadsheet-import](https://github.com/UgnisSoftware/react-spreadsheet-import) library. The original library is not responding in a timely manner to many feature requests I have therefore decided to open a fork and maintain it myself. I will be adding new features and fixing bugs as they come up. If you have any feature requests or bugs please open an issue and I will try to address it as soon as possible.
+
+> The improvments include styling errors, loading indicators, select/deselect all columns, and more.
+
+> For details on how to use the library see below:
+
 
 A component used for importing XLS / XLSX / CSV documents built with [**Chakra UI**](https://chakra-ui.com). Import flow combines:
 
@@ -215,7 +222,7 @@ Common date-time formats can be viewed [here](https://docs.sheetjs.com/docs/csf/
 
 ### Customising styles (colors, fonts)
 
-You can see default theme we use [here](https://github.com/UgnisSoftware/react-spreadsheet-import/blob/master/src/theme.ts). Your override should match this object's structure.
+You can see default theme we use [here](https://github.com/benzler/react-spreadsheet-import/blob/master/src/theme.ts). Your override should match this object's structure.
 
 There are 3 ways you can style the component:
 
@@ -309,7 +316,7 @@ You can change any text in the flow:
 />
 ```
 
-You can see all the translation keys [here](https://github.com/UgnisSoftware/react-spreadsheet-import/blob/master/src/translationsRSIProps.ts)
+You can see all the translation keys [here](https://github.com/benzler/react-spreadsheet-import/blob/master/src/translationsRSIProps.ts)
 
 ## VS other libraries
 
@@ -338,4 +345,4 @@ Feel free to open issues if you have any questions or notice bugs. If you want d
 
 ## Credits
 
-Created by Ugnis. [Julita Kriauciunaite](https://github.com/JulitorK) and [Karolis Masiulis](https://github.com/masiulis). You can contact us at `info@ugnis.com`
+Created by Ugnis. [Julita Kriauciunaite](https://github.com/JulitorK) and [Karolis Masiulis](https://github.com/masiulis). You can contact us at `info@ugnis.com` and improved by `benzler`.
